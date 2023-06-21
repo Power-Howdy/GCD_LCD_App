@@ -1,0 +1,2081 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "num2",
+          "type": "uint256"
+        }
+      ],
+      "name": "GetGCD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "num1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "num2",
+          "type": "uint256"
+        }
+      ],
+      "name": "GetLCD",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "allSourcePaths": {
+    "0": "contracts/GCD_LCD_Contract.sol"
+  },
+  "ast": {
+    "absolutePath": "contracts/GCD_LCD_Contract.sol",
+    "exportedSymbols": {
+      "GCD_LCD": [
+        43
+      ]
+    },
+    "id": 44,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "GCD_LCD",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 43,
+        "linearizedBaseContracts": [
+          43
+        ],
+        "name": "GCD_LCD",
+        "nameLocation": "67:7:0",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 22,
+              "nodeType": "Block",
+              "src": "145:67:0",
+              "statements": [
+                {
+                  "expression": {
+                    "condition": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 12,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 10,
+                        "name": "num2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5,
+                        "src": "162:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": ">",
+                      "rightExpression": {
+                        "hexValue": "30",
+                        "id": 11,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "169:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "src": "162:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseExpression": {
+                      "id": 19,
+                      "name": "num1",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "201:4:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 20,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "Conditional",
+                    "src": "162:43:0",
+                    "trueExpression": {
+                      "arguments": [
+                        {
+                          "id": 14,
+                          "name": "num2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5,
+                          "src": "180:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "id": 17,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "id": 15,
+                            "name": "num1",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3,
+                            "src": "186:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "%",
+                          "rightExpression": {
+                            "id": 16,
+                            "name": "num2",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5,
+                            "src": "193:4:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "186:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 13,
+                        "name": "GetGCD",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 23,
+                        "src": "173:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                          "typeString": "function (uint256,uint256) view returns (uint256)"
+                        }
+                      },
+                      "id": 18,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "173:25:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 9,
+                  "id": 21,
+                  "nodeType": "Return",
+                  "src": "155:50:0"
+                }
+              ]
+            },
+            "functionSelector": "d132b938",
+            "id": 23,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetGCD",
+            "nameLocation": "90:6:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "mutability": "mutable",
+                  "name": "num1",
+                  "nameLocation": "102:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23,
+                  "src": "97:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "97:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "mutability": "mutable",
+                  "name": "num2",
+                  "nameLocation": "113:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23,
+                  "src": "108:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "108:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "96:22:0"
+            },
+            "returnParameters": {
+              "id": 9,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 23,
+                  "src": "140:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "140:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "139:6:0"
+            },
+            "scope": 43,
+            "src": "81:131:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 41,
+              "nodeType": "Block",
+              "src": "282:56:0",
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 39,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 34,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 32,
+                        "name": "num1",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 25,
+                        "src": "299:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "*",
+                      "rightExpression": {
+                        "id": 33,
+                        "name": "num2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 27,
+                        "src": "306:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "299:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "/",
+                    "rightExpression": {
+                      "arguments": [
+                        {
+                          "id": 36,
+                          "name": "num1",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 25,
+                          "src": "320:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "id": 37,
+                          "name": "num2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27,
+                          "src": "326:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 35,
+                        "name": "GetGCD",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 23,
+                        "src": "313:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                          "typeString": "function (uint256,uint256) view returns (uint256)"
+                        }
+                      },
+                      "id": 38,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "313:18:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "299:32:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 31,
+                  "id": 40,
+                  "nodeType": "Return",
+                  "src": "292:39:0"
+                }
+              ]
+            },
+            "functionSelector": "b2fa616a",
+            "id": 42,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "GetLCD",
+            "nameLocation": "227:6:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 25,
+                  "mutability": "mutable",
+                  "name": "num1",
+                  "nameLocation": "239:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42,
+                  "src": "234:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "234:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 27,
+                  "mutability": "mutable",
+                  "name": "num2",
+                  "nameLocation": "250:4:0",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42,
+                  "src": "245:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "233:22:0"
+            },
+            "returnParameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 30,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42,
+                  "src": "277:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 29,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "277:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "276:6:0"
+            },
+            "scope": 43,
+            "src": "218:120:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 44,
+        "src": "58:282:0",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "33:307:0"
+  },
+  "bytecode": "608060405234801561001057600080fd5b50610174806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063b2fa616a1461003b578063d132b93814610060575b600080fd5b61004e6100493660046100b9565b610073565b60405190815260200160405180910390f35b61004e61006e3660046100b9565b61009c565b600061007f838361009c565b61008983856100db565b6100939190610116565b90505b92915050565b60008082116100ab5782610093565b6100938261006e818661012a565b600080604083850312156100cc57600080fd5b50508035926020909101359150565b808202811582820484141761009657634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052601260045260246000fd5b60008261012557610125610100565b500490565b60008261013957610139610100565b50069056fea264697066735822122073fee8759826635d3c7382722c27e9bf0362d7448ee11ea0a58df5c7a61b3d7164736f6c63430008140033",
+  "bytecodeSha1": "b7c0dc4bfc86fc07e3ff8c88b5c4ea923c45fd85",
+  "compiler": {
+    "evm_version": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "version": "0.8.20+commit.a1b79de6"
+  },
+  "contractName": "GCD_LCD",
+  "coverageMap": {
+    "branches": {
+      "0": {
+        "GCD_LCD.GetGCD": {
+          "2": [
+            162,
+            170,
+            true
+          ]
+        }
+      }
+    },
+    "statements": {
+      "0": {
+        "GCD_LCD.GetGCD": {
+          "1": [
+            155,
+            205
+          ]
+        },
+        "GCD_LCD.GetLCD": {
+          "0": [
+            292,
+            331
+          ]
+        }
+      }
+    }
+  },
+  "dependencies": [],
+  "deployedBytecode": "608060405234801561001057600080fd5b50600436106100365760003560e01c8063b2fa616a1461003b578063d132b93814610060575b600080fd5b61004e6100493660046100b9565b610073565b60405190815260200160405180910390f35b61004e61006e3660046100b9565b61009c565b600061007f838361009c565b61008983856100db565b6100939190610116565b90505b92915050565b60008082116100ab5782610093565b6100938261006e818661012a565b600080604083850312156100cc57600080fd5b50508035926020909101359150565b808202811582820484141761009657634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052601260045260246000fd5b60008261012557610125610100565b500490565b60008261013957610139610100565b50069056fea264697066735822122073fee8759826635d3c7382722c27e9bf0362d7448ee11ea0a58df5c7a61b3d7164736f6c63430008140033",
+  "deployedSourceMap": "58:282:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;218:120;;;;;;:::i;:::-;;:::i;:::-;;;413:25:1;;;401:2;386:18;218:120:0;;;;;;;81:131;;;;;;:::i;:::-;;:::i;218:120::-;277:4;313:18;320:4;326;313:6;:18::i;:::-;299:11;306:4;299;:11;:::i;:::-;:32;;;;:::i;:::-;292:39;;218:120;;;;;:::o;81:131::-;140:4;169:1;162:4;:8;:43;;201:4;162:43;;;173:25;180:4;186:11;180:4;186;:11;:::i;14:248:1:-;82:6;90;143:2;131:9;122:7;118:23;114:32;111:52;;;159:1;156;149:12;111:52;-1:-1:-1;;182:23:1;;;252:2;237:18;;;224:32;;-1:-1:-1;14:248:1:o;449:265::-;522:9;;;553;;570:15;;;564:22;;550:37;540:168;;630:10;625:3;621:20;618:1;611:31;665:4;662:1;655:15;693:4;690:1;683:15;719:127;780:10;775:3;771:20;768:1;761:31;811:4;808:1;801:15;835:4;832:1;825:15;851:120;891:1;917;907:35;;922:18;;:::i;:::-;-1:-1:-1;956:9:1;;851:120::o;976:112::-;1008:1;1034;1024:35;;1039:18;;:::i;:::-;-1:-1:-1;1073:9:1;;976:112::o",
+  "language": "Solidity",
+  "natspec": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "offset": [
+    58,
+    340
+  ],
+  "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH2 0x36 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xB2FA616A EQ PUSH2 0x3B JUMPI DUP1 PUSH4 0xD132B938 EQ PUSH2 0x60 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH2 0x4E PUSH2 0x49 CALLDATASIZE PUSH1 0x4 PUSH2 0xB9 JUMP JUMPDEST PUSH2 0x73 JUMP JUMPDEST PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE PUSH1 0x20 ADD PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH2 0x4E PUSH2 0x6E CALLDATASIZE PUSH1 0x4 PUSH2 0xB9 JUMP JUMPDEST PUSH2 0x9C JUMP JUMPDEST PUSH1 0x0 PUSH2 0x7F DUP4 DUP4 PUSH2 0x9C JUMP JUMPDEST PUSH2 0x89 DUP4 DUP6 PUSH2 0xDB JUMP JUMPDEST PUSH2 0x93 SWAP2 SWAP1 PUSH2 0x116 JUMP JUMPDEST SWAP1 POP JUMPDEST SWAP3 SWAP2 POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 DUP3 GT PUSH2 0xAB JUMPI DUP3 PUSH2 0x93 JUMP JUMPDEST PUSH2 0x93 DUP3 PUSH2 0x6E DUP2 DUP7 PUSH2 0x12A JUMP JUMPDEST PUSH1 0x0 DUP1 PUSH1 0x40 DUP4 DUP6 SUB SLT ISZERO PUSH2 0xCC JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP POP DUP1 CALLDATALOAD SWAP3 PUSH1 0x20 SWAP1 SWAP2 ADD CALLDATALOAD SWAP2 POP JUMP JUMPDEST DUP1 DUP3 MUL DUP2 ISZERO DUP3 DUP3 DIV DUP5 EQ OR PUSH2 0x96 JUMPI PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x11 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH1 0x0 MSTORE PUSH1 0x12 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH1 0x0 REVERT JUMPDEST PUSH1 0x0 DUP3 PUSH2 0x125 JUMPI PUSH2 0x125 PUSH2 0x100 JUMP JUMPDEST POP DIV SWAP1 JUMP JUMPDEST PUSH1 0x0 DUP3 PUSH2 0x139 JUMPI PUSH2 0x139 PUSH2 0x100 JUMP JUMPDEST POP MOD SWAP1 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH20 0xFEE8759826635D3C7382722C27E9BF0362D7448E 0xE1 0x1E LOG0 0xA5 DUP14 CREATE2 0xC7 0xA6 SHL RETURNDATASIZE PUSH18 0x64736F6C6343000814003300000000000000 ",
+  "pcMap": {
+    "0": {
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x80"
+    },
+    "2": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "4": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "MSTORE",
+      "path": "0"
+    },
+    "5": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "CALLVALUE",
+      "path": "0"
+    },
+    "6": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "7": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "ISZERO",
+      "path": "0"
+    },
+    "8": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x10"
+    },
+    "11": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "12": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "14": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "15": {
+      "dev": "Cannot send ether to nonpayable function",
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "16": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "17": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "18": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "20": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "21": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "LT",
+      "path": "0"
+    },
+    "22": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x36"
+    },
+    "25": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "26": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "28": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "CALLDATALOAD",
+      "path": "0"
+    },
+    "29": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0xE0"
+    },
+    "31": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "SHR",
+      "path": "0"
+    },
+    "32": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "33": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xB2FA616A"
+    },
+    "38": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "39": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x3B"
+    },
+    "42": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "43": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "44": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH4",
+      "path": "0",
+      "value": "0xD132B938"
+    },
+    "49": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "EQ",
+      "path": "0"
+    },
+    "50": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x60"
+    },
+    "53": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "54": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "55": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "57": {
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "58": {
+      "first_revert": true,
+      "fn": null,
+      "offset": [
+        58,
+        340
+      ],
+      "op": "REVERT",
+      "path": "0"
+    },
+    "59": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "60": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4E"
+    },
+    "63": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x49"
+    },
+    "66": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "67": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "69": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xB9"
+    },
+    "72": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "i",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "73": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "74": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x73"
+    },
+    "77": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "i",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "78": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "79": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "81": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "82": {
+      "op": "SWAP1"
+    },
+    "83": {
+      "op": "DUP2"
+    },
+    "84": {
+      "op": "MSTORE"
+    },
+    "85": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "87": {
+      "op": "ADD"
+    },
+    "88": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x40"
+    },
+    "90": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "MLOAD",
+      "path": "0"
+    },
+    "91": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "DUP1",
+      "path": "0"
+    },
+    "92": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "93": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "SUB",
+      "path": "0"
+    },
+    "94": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "95": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "RETURN",
+      "path": "0"
+    },
+    "96": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "97": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x4E"
+    },
+    "100": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x6E"
+    },
+    "103": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "CALLDATASIZE",
+      "path": "0"
+    },
+    "104": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x4"
+    },
+    "106": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xB9"
+    },
+    "109": {
+      "fn": "GCD_LCD.GetGCD",
+      "jump": "i",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "110": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "111": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x9C"
+    },
+    "114": {
+      "fn": "GCD_LCD.GetGCD",
+      "jump": "i",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "115": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "116": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        277,
+        281
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "118": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        313,
+        331
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "statement": 0,
+      "value": "0x7F"
+    },
+    "121": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        320,
+        324
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "122": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        326,
+        330
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "123": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        313,
+        319
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x9C"
+    },
+    "126": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "i",
+      "offset": [
+        313,
+        331
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "127": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        313,
+        331
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "128": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        310
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x89"
+    },
+    "131": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        306,
+        310
+      ],
+      "op": "DUP4",
+      "path": "0"
+    },
+    "132": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        303
+      ],
+      "op": "DUP6",
+      "path": "0"
+    },
+    "133": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        310
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xDB"
+    },
+    "136": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "i",
+      "offset": [
+        299,
+        310
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "137": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        310
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "138": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x93"
+    },
+    "141": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "142": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "143": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x116"
+    },
+    "146": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "i",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "147": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        299,
+        331
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "148": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        292,
+        331
+      ],
+      "op": "SWAP1",
+      "path": "0"
+    },
+    "149": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        292,
+        331
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "150": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "151": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "SWAP3",
+      "path": "0"
+    },
+    "152": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "SWAP2",
+      "path": "0"
+    },
+    "153": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "154": {
+      "fn": "GCD_LCD.GetLCD",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "POP",
+      "path": "0"
+    },
+    "155": {
+      "fn": "GCD_LCD.GetLCD",
+      "jump": "o",
+      "offset": [
+        218,
+        338
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "156": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        81,
+        212
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "157": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        140,
+        144
+      ],
+      "op": "PUSH1",
+      "path": "0",
+      "value": "0x0"
+    },
+    "159": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        169,
+        170
+      ],
+      "op": "DUP1",
+      "path": "0",
+      "statement": 1
+    },
+    "160": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        166
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "161": {
+      "branch": 2,
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        170
+      ],
+      "op": "GT",
+      "path": "0"
+    },
+    "162": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        205
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0xAB"
+    },
+    "165": {
+      "branch": 2,
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        205
+      ],
+      "op": "JUMPI",
+      "path": "0"
+    },
+    "166": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        201,
+        205
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "167": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        205
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x93"
+    },
+    "170": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        205
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "171": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        162,
+        205
+      ],
+      "op": "JUMPDEST",
+      "path": "0"
+    },
+    "172": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        173,
+        198
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x93"
+    },
+    "175": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        180,
+        184
+      ],
+      "op": "DUP3",
+      "path": "0"
+    },
+    "176": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        186,
+        197
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x6E"
+    },
+    "179": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        180,
+        184
+      ],
+      "op": "DUP2",
+      "path": "0"
+    },
+    "180": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        186,
+        190
+      ],
+      "op": "DUP7",
+      "path": "0"
+    },
+    "181": {
+      "fn": "GCD_LCD.GetGCD",
+      "offset": [
+        186,
+        197
+      ],
+      "op": "PUSH2",
+      "path": "0",
+      "value": "0x12A"
+    },
+    "184": {
+      "fn": "GCD_LCD.GetGCD",
+      "jump": "i",
+      "offset": [
+        186,
+        197
+      ],
+      "op": "JUMP",
+      "path": "0"
+    },
+    "185": {
+      "op": "JUMPDEST"
+    },
+    "186": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "188": {
+      "op": "DUP1"
+    },
+    "189": {
+      "op": "PUSH1",
+      "value": "0x40"
+    },
+    "191": {
+      "op": "DUP4"
+    },
+    "192": {
+      "op": "DUP6"
+    },
+    "193": {
+      "op": "SUB"
+    },
+    "194": {
+      "op": "SLT"
+    },
+    "195": {
+      "op": "ISZERO"
+    },
+    "196": {
+      "op": "PUSH2",
+      "value": "0xCC"
+    },
+    "199": {
+      "op": "JUMPI"
+    },
+    "200": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "202": {
+      "op": "DUP1"
+    },
+    "203": {
+      "op": "REVERT"
+    },
+    "204": {
+      "op": "JUMPDEST"
+    },
+    "205": {
+      "op": "POP"
+    },
+    "206": {
+      "op": "POP"
+    },
+    "207": {
+      "op": "DUP1"
+    },
+    "208": {
+      "op": "CALLDATALOAD"
+    },
+    "209": {
+      "op": "SWAP3"
+    },
+    "210": {
+      "op": "PUSH1",
+      "value": "0x20"
+    },
+    "212": {
+      "op": "SWAP1"
+    },
+    "213": {
+      "op": "SWAP2"
+    },
+    "214": {
+      "op": "ADD"
+    },
+    "215": {
+      "op": "CALLDATALOAD"
+    },
+    "216": {
+      "op": "SWAP2"
+    },
+    "217": {
+      "op": "POP"
+    },
+    "218": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "219": {
+      "op": "JUMPDEST"
+    },
+    "220": {
+      "op": "DUP1"
+    },
+    "221": {
+      "op": "DUP3"
+    },
+    "222": {
+      "op": "MUL"
+    },
+    "223": {
+      "op": "DUP2"
+    },
+    "224": {
+      "op": "ISZERO"
+    },
+    "225": {
+      "op": "DUP3"
+    },
+    "226": {
+      "op": "DUP3"
+    },
+    "227": {
+      "op": "DIV"
+    },
+    "228": {
+      "op": "DUP5"
+    },
+    "229": {
+      "op": "EQ"
+    },
+    "230": {
+      "op": "OR"
+    },
+    "231": {
+      "op": "PUSH2",
+      "value": "0x96"
+    },
+    "234": {
+      "op": "JUMPI"
+    },
+    "235": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "240": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "242": {
+      "op": "SHL"
+    },
+    "243": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "245": {
+      "op": "MSTORE"
+    },
+    "246": {
+      "op": "PUSH1",
+      "value": "0x11"
+    },
+    "248": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "250": {
+      "op": "MSTORE"
+    },
+    "251": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "253": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "255": {
+      "op": "REVERT"
+    },
+    "256": {
+      "op": "JUMPDEST"
+    },
+    "257": {
+      "op": "PUSH4",
+      "value": "0x4E487B71"
+    },
+    "262": {
+      "op": "PUSH1",
+      "value": "0xE0"
+    },
+    "264": {
+      "op": "SHL"
+    },
+    "265": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "267": {
+      "op": "MSTORE"
+    },
+    "268": {
+      "op": "PUSH1",
+      "value": "0x12"
+    },
+    "270": {
+      "op": "PUSH1",
+      "value": "0x4"
+    },
+    "272": {
+      "op": "MSTORE"
+    },
+    "273": {
+      "op": "PUSH1",
+      "value": "0x24"
+    },
+    "275": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "277": {
+      "op": "REVERT"
+    },
+    "278": {
+      "op": "JUMPDEST"
+    },
+    "279": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "281": {
+      "op": "DUP3"
+    },
+    "282": {
+      "op": "PUSH2",
+      "value": "0x125"
+    },
+    "285": {
+      "op": "JUMPI"
+    },
+    "286": {
+      "op": "PUSH2",
+      "value": "0x125"
+    },
+    "289": {
+      "op": "PUSH2",
+      "value": "0x100"
+    },
+    "292": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "293": {
+      "op": "JUMPDEST"
+    },
+    "294": {
+      "op": "POP"
+    },
+    "295": {
+      "op": "DIV"
+    },
+    "296": {
+      "op": "SWAP1"
+    },
+    "297": {
+      "jump": "o",
+      "op": "JUMP"
+    },
+    "298": {
+      "op": "JUMPDEST"
+    },
+    "299": {
+      "op": "PUSH1",
+      "value": "0x0"
+    },
+    "301": {
+      "op": "DUP3"
+    },
+    "302": {
+      "op": "PUSH2",
+      "value": "0x139"
+    },
+    "305": {
+      "op": "JUMPI"
+    },
+    "306": {
+      "op": "PUSH2",
+      "value": "0x139"
+    },
+    "309": {
+      "op": "PUSH2",
+      "value": "0x100"
+    },
+    "312": {
+      "jump": "i",
+      "op": "JUMP"
+    },
+    "313": {
+      "op": "JUMPDEST"
+    },
+    "314": {
+      "op": "POP"
+    },
+    "315": {
+      "op": "MOD"
+    },
+    "316": {
+      "op": "SWAP1"
+    },
+    "317": {
+      "jump": "o",
+      "op": "JUMP"
+    }
+  },
+  "sha1": "d03f31bcc9f7aaa3bc21f57748bd5b78e96b76bf",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\ncontract GCD_LCD {\n    function GetGCD(uint num1, uint num2) public view returns (uint){\n        return num2 > 0 ? GetGCD(num2, num1 % num2) : num1;\n    }\n\n    function GetLCD(uint num1, uint num2) public view returns (uint){\n        return num1 * num2 / GetGCD(num1, num2);\n    }\n}",
+  "sourceMap": "58:282:0:-:0;;;;;;;;;;;;;;;;;;;",
+  "sourcePath": "contracts/GCD_LCD_Contract.sol",
+  "type": "contract"
+}

@@ -1,0 +1,15 @@
+{
+  "contracts": {
+    "GCD_LCD": "b7c0dc4bfc86fc07e3ff8c88b5c4ea923c45fd85"
+  },
+  "tests": {
+    "tests/test_gcd_lcd.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "5ba3854d939a4b073209b73be2ff38dedd1d054f",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
